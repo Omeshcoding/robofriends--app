@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Omeshcoding/robofriends--app/static/css/main.52d835fe.css",
+    "main.js": "/Omeshcoding/robofriends--app/static/js/main.814034f7.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Omeshcoding/robofriends--app/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/Omeshcoding/robofriends--app/index.html",
+    "main.52d835fe.css.map": "/Omeshcoding/robofriends--app/static/css/main.52d835fe.css.map",
+    "main.814034f7.js.map": "/Omeshcoding/robofriends--app/static/js/main.814034f7.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Omeshcoding/robofriends--app/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52d835fe.css",
+    "static/js/main.814034f7.js"
+  ]
+}
