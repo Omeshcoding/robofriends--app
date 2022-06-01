@@ -5,7 +5,7 @@ import Card from './Card';
 const CardList = ({ robots }) => {
 
     return (
- <div>
+ <div className='mx-20 text-center'>
             {
            robots.map((user, i) => {
         return(
