@@ -25,11 +25,11 @@ class App extends React.Component {
       return robot.name.toLocaleLowerCase().includes(this.state.searchfield.toLocaleLowerCase())
     })
     return (
-      <div>
+      <>
         <h1 className='text-center text-7xl text-purple-900  my-4'>RoboFriends</h1>
         <Searchbox searchChange={this.onsearchChange}/>
         <CardList robots={filteredRobots} />
-      </div>
+      </>
     );
 
   }
