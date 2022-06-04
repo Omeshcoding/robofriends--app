@@ -1,8 +1,8 @@
 import React from 'react';
-import CardList from './CardList';
-import Scroll from './Scroll';
+import CardList from '../components/CardList';
+import Scroll from '../components/Scroll';
 import {robots} from './robots';
-import Searchbox from './Searchbox';
+import Searchbox from '../components/Searchbox';
 import './App.css';
 
 
@@ -30,25 +30,24 @@ class App extends React.Component {
   }
   
   render() {
-    const filteredRobots = this.state.robots.filter(robot=> {
-      return robot.name.toLocaleLowerCase().includes(this.state.searchfield.toLocaleLowerCase())
+  
+  const {robots,searchfield} = this.state
+  
+    const filteredRobots = robots.filter(robot => {
+      return robot.name.toLocaleLowerCase().includes(searchfield.toLocaleLowerCase())
     })
-    if (this.state.robots.length === 0) {
-      return <h1>Loading...</h1>
-    } else {
-      
-      
-      return (
-        <>
-          <h1 className='text-center text-7xl text-purple-900  my-4'>RoboFriends</h1>
-          <Searchbox searchChange={this.onsearchChange} />
-         
+    return !robots.length ? <h1>Loading...</h1>: (
+      <>
+      <h1 className='text-center text-7xl text-purple-900  my-4'>RoboFriends</h1>
+      <Searchbox searchChange={this.onsearchChange}/>
           <Scroll>
           <CardList robots={filteredRobots} />
           </Scroll>
-        </>
-      );
-    }
+      </>
+    );
+
+      }
+    
   }
-}
+
 export default App;
