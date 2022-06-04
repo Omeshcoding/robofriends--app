@@ -14,7 +14,7 @@ class ErrorBoundries extends  React.Component{
 
     render() {
         if (this.state.hasError) {
-            return <h1>Ooooops...Not Working</h1>
+            return <h1 className='text-center text-6xl text-purple-200 '>Ooooops...Not Working</h1>
         }
         return this.props.children
     }
