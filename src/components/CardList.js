@@ -3,9 +3,7 @@ import Card from './Card';
 
 
 const CardList = ({ robots }) => {
-    if (true) {
-      throw new Error("Ohhhh")
-  }
+
     return (
  <div className='mx-20 text-center'>
             {
